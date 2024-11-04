@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva La Vida</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-light contact">
+            <div class="container-fluid">
+                <div class="col-6">
+                    <a href="mailto:contact@travelagency.com">contact@travelagency.com</a> |
+                    <a href="tel:+21612345678">+216 12-345-678</a>
+                </div>
+                <div class="col-1 d-flex justify-content-end">
+                    <a href="https://facebook.com/" aria-label="Facebook">
+                        <img src="./img/logos/facebook-square.svg" alt="Facebook account">
+                    </a>
+                    <a href="https://instagram.com/" aria-label="Instagram">
+                        <img src="./img/logos/instagram-square.svg" alt="Instagram account">
+                    </a>
+                    <a href="https://linkedin.com/in/" aria-label="LinkedIn">
+                        <img src="./img/logos/linkedin.svg" alt="LinkedIn account">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark infobar">
+            <div class="container-fluid">
+                <a class="navbar-brand title" href="index.html">VivaLaVida</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Best Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Currently Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 searchline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="section1 container-fluid text-center p-4">
+        <div class="phone">
+            <h1 class="display-4">Viva La Vida</h1>
+            <h3 class="mb-3">Live Fully, Travel Freely</h3>
+            <p class="cta-p mb-3">We're giving a 50% discount if you book early. Hurry and save your spot now!</p>   
+        </div>
+        
+    
+        <div class="offerpicker">
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                <button class="btn btn-outline-primary m-2" style="background-color: rgb(5, 52, 105); color: beige !important;">Flights</button>
+                <button class="btn btn-outline-primary m-2">Tours</button>
+                <button class="btn btn-outline-primary m-2">Cruise</button>
+                <button class="btn btn-outline-primary m-2">Programs</button>
+                <button class="btn btn-outline-primary m-2">Hotels</button>
+            </div>
+            <div class="selections container-fluid row d-flex justify-content-arround">
+                <div class="flight_Search_boxed p-3 bg-light rounded">
+                    <p style="font-weight: bold;">From</p>
+                    <input type="text" class="form-control" placeholder="Choose airport">
+                    <div class="plan_icon_position">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                </div>
+                <div class="flight_Search_boxed p-3 bg-light rounded">
+                    <p style="font-weight: bold;">To</p>
+                    <input type="text" class="form-control" placeholder="Choose airport">
+                    <div class="plan_icon_position">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                </div>
+                <div class="flight_Search_boxed p-3 bg-light rounded">
+                    <p style="font-weight: bold;">Journey Date</p>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="flight_Search_boxed p-3 bg-light rounded">
+                    <p style="font-weight: bold;">Return Date</p>
+                    <input type="date" class="form-control">
+                </div>
+                    <div class="flight_Search_boxed p-3 bg-light rounded ">
+                        <p style="font-weight: bold;">Passengers</p>
+                        <div class="passenger">
+                            <input type="number" class="form-control mr-2" placeholder="Adults">
+                            <input type="number" class="form-control ml-2" placeholder="Kids">
+                        </div>
+                        </div>
+                        
+                </div>       
+                <!-- Search Button -->
+                <div class=" d-flex justify-content-center mt-4">
+                    <button class="btn btn-outline-primary w-50 searchbutton">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="best-destinations py-5">
+        <div class="container text-center">
+            <h2 class="sec2-title display-4 mb-4">Best Destinations</h2>
+            <p class="lead">Explore the top destinations handpicked for you. Start planning your dream vacation!</p>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="./img/paris.jpg" class="card-img-top" alt="Paris, France">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris, France</h5>
+                            <p class="card-text">Experience the city of love with its iconic landmarks and rich culture. Perfect for romantic getaways and solo adventures.</p>
+                            <a href="#" class="btn btn-primary">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="./img/bali.jpg" class="card-img-top" alt="Bali, Indonesia">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">Find your paradise on the tropical island of Bali. From beaches to temples, it’s a perfect blend of adventure and relaxation.</p>
+                            <a href="#" class="btn btn-primary">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="./img/kyoto.jpg" class="card-img-top" alt="Kyoto, Japan">
+                        <div class="card-body">
+                            <h5 class="card-title">Kyoto, Japan</h5>
+                            <p class="card-text">Discover ancient temples, beautiful gardens, and the rich history of Japan in Kyoto. A cultural experience like no other.</p>
+                            <a href="#" class="btn btn-primary">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="programs">
+        <div class="container">
+            <h2>Discover Our Programs</h2>
+            <p>Whether you’re dreaming of a peaceful getaway, an adventurous journey, or a cultural immersion, we have something special for everyone. Explore our curated programs and find the perfect experience for you.</p>
+            <div class="program-items">
+                <div class="program-item">
+                    <img src="./img/capadocia.jpg" alt="Cappadocia, Turkey">
+                    <div class="overlay"></div>
+                    <div class="program-item-content">
+                        <h3>Turkey - Cappadocia</h3>
+                        <p>Experience the breathtaking landscapes of Cappadocia, with its famous hot air balloons, unique rock formations, and ancient cave dwellings.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="program-item">
+                    <img src="./img/malisia.jpg" alt="Malaysia">
+                    <div class="overlay"></div>
+                    <div class="program-item-content">
+                        <h3>Malaysia</h3>
+                        <p>Dive into the vibrant cultures, stunning beaches, and diverse wildlife of Malaysia. A perfect mix of adventure and relaxation awaits.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="program-item">
+                    <img src="./img/southk.jpg" alt="South Korea">
+                    <div class="overlay"></div>
+                    <div class="program-item-content">
+                        <h3>South Korea</h3>
+                        <p>Explore the modern cities, traditional palaces, and serene mountains of South Korea. A destination rich in history and modern charm.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonials">
+        <div class="container">
+            <h2 class="sec2-title display-4 mb-4">What Our Clients Say</h2>
+            <div class="testimonial-items">
+                <div class="testimonial-item">
+                    <p>"I had an amazing experience with Amsterdam Traveling! They took care of everything, and I loved every moment of my trip!"</p>
+                    <h4>- Sarah Johnson</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"The best travel agency I have ever worked with. Highly recommend their services!"</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"A fantastic experience from start to finish! I will definitely use Amsterdam Traveling again."</p>
+                    <h4>- Emily Davis</h4>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="offers">
+    </div>
+    <div class="newsletter">
+        <h1>Stay in the Loop!</h1>
+        <p>Enter your email to unlock exclusive offers and be the first to know about our latest deals. Join our community and start exploring amazing experiences with us!</p>
+            <form class="my-2 input-group input-group-sm form-re-sizing">
+                <input type="text" class="form-control subscribe-email m-lg-2 p-1" placeholder="   Join our newsletter" aria-labelledby="subscribe">
+                <div class="input-group-append m-lg-2 p-1">
+                    <button class="btn btn-primary " type="button" id="subscribe">Subscribe</button>
+                </div>
+            </form>
+        <p>Subscribe now and start your adventure!</p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <h1>🌍 Explore the World with Viva La Vida</h1>
+                <p>From hidden gems to iconic spots, let us inspire your next adventure. Discover your passion, immerse in new cultures, and make memories that last a lifetime with Viva La Vida.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Travel Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+216-12-345-678">📞 +216-12-345-678</a></li>
+                        <li><a href="mailto:info@vivalavidatravel.com">✉️ info@vivalavidatravel.com</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Viva La Vida. Developed by Amira Zidi. All rights reserved.</p>
+                <p>Designing unforgettable journeys for travelers around the world.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

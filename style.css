@@ -1,0 +1,801 @@
+@font-face {
+    font-family: "AmesterdamTraveling";
+    src: url(./fonts/Amsterdam\ Traveling.ttf);
+}
+
+@font-face {
+    font-family: "Retrolight";
+    src: url(./fonts/Retrolight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+nav img {
+    width: 25px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+nav img:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact {
+    padding: 10px 20px;
+    background-color: beige;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact a {
+    color: #555;
+    margin-right: 10px;
+}
+
+.contact a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+.title {
+    font-family: "AmesterdamTraveling";
+    font-weight: 400 !important;
+    color: beige;
+}
+
+.infobar {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    background: linear-gradient(180deg, rgb(5, 52, 105), rgb(11, 65, 128), rgb(5, 52, 105)) !important;
+    font-family: inherit; /* Pas de changement de police ici */
+    color: #fff;
+}
+
+.searchline {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.searchline input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.searchline button {
+    color: beige;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.searchline button:hover {
+    background-color: rgba(11, 65, 128, 0.9);
+}
+
+
+@media (max-width: 768px) {
+    .infobar {
+        justify-content: start;
+    }
+}
+
+.section1 {
+    background-image: url(./img/section1.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+}
+
+.section1 h1 {
+    font-family: "AmesterdamTraveling";
+    font-size: 3.5em;
+    color: rgb(11, 65, 128);
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.section1 h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 400;
+    text-shadow: 1px 0px 9px rgba(0,0,0,0.49);
+    margin-bottom: 20px;
+    background-color: rgba(204, 204, 204, 0.7);
+    border-radius: 10px;
+}
+
+.cta-p {
+    color: rgb(11, 65, 128);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 1px 0px 9px rgba(0,0,0,0.49);
+    margin-bottom: 20px;
+    background-color: rgba(204, 204, 204, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.offerpicker {
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(245, 245, 220, 0.9);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.75);
+}
+
+.offerpicker button {
+    min-width: 172px !important;
+    margin: 10px !important;
+    padding: 10px !important;
+    font-size: 0.9em !important;
+    font-weight: 600 !important; 
+    border-radius: 5px !important;
+    transition: background-color 0.3s ease;
+    border: 2px solid rgb(5, 52, 105) !important;
+    color: rgb(5, 52, 105) !important;;
+    font-weight: bold;
+}
+
+.offerpicker button:hover {
+    background-color: rgb(5, 52, 105) !important;
+    color: beige !important;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.flight_Search_boxed {
+    background: rgba(245, 245, 220, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 170px !important; 
+    height: 130px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flight_Search_boxed p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+}
+
+.flight_Search_boxed input {
+    font-size: 16px;
+    width: 130px;
+    border: 1px solid #ddd;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.searchbutton .btn-primary {
+    max-width: 300px !important;
+    font-size: 16px !important;
+    background-color: rgb(5, 52, 105) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.searchbutton .btn-primary:hover {
+    background-color: rgb(5, 52, 105);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1250px) {
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 650px !important;
+    }
+    .section1 h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 45px;
+        color: beige;
+    }
+    .section1 h3 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .cta-p {
+        color: rgb(11, 65, 128);
+        font-family: 'Lucida Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .offerpicker {
+        width: 80%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.75);
+        margin: 5px;
+    }
+    .flight_Search_boxed {
+        width: 200px !important; 
+        height: 100px !important;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    .offerpicker button {
+        min-width: 87px !important;
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .flight_Search_boxed input {
+        font-size: 10px;
+        width: 180px;
+        border: 1px solid #ddd;
+        background: transparent;
+        border-radius: 5px;
+    }
+    .flight_Search_boxed p {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .selections {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100% !important;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 847px) {
+    .section1{
+        display: flex;
+        flex-direction: row;
+        width: 100% !important;
+        height: 750px !important;
+    }
+    .flight_Search_boxed {
+        width: 100% !important; 
+        margin-bottom: 10px !important; 
+        height: 50px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .offerpicker .d-flex button {
+        min-width:25px;
+        font-size: 10px;
+        margin: 0;
+        padding: 5px;
+    }
+    .flight_Search_boxed input {
+        font-size: 8px;
+        width: 100% !important;
+        height: 20px !important;
+    }
+    .searchbutton button {
+        min-width: 100px !important;
+        font-size: 15px;
+    }
+    .passenger{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 529px) {
+    .section1{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        justify-content: center !important;
+        height: 450px !important;
+    }
+    .section1 h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 35px;
+        color: beige;
+        margin: 0 !important;
+    }
+    .section1 h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0 !important;
+    }
+    .cta-p {
+        color: rgb(11, 65, 128);
+        font-family: 'Lucida Sans', sans-serif;
+        font-size: 8px;
+        font-weight: 900;
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .flight_Search_boxed {
+        width: 100px !important; 
+        margin-bottom: 10px !important; 
+        height: 50px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .offerpicker .d-flex button {
+        min-width:40px !important;
+        font-size: 8px !important;
+        margin:2px !important;
+        padding: 4px !important;
+    }
+}
+
+@media (max-width: 402px) {
+    .section1{
+        height: 650px !important;
+    }
+    .flight_Search_boxed {
+        width: 100px !important; 
+        margin: 0 0 10px 0 !important;
+    }
+    .selections {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100% !important;
+        justify-content: space-around;
+        margin: 0 !important;
+    }
+}
+
+.sec2-title {
+    font-family: "AmesterdamTraveling";
+    font-size: 1.5rem;
+    color: rgb(11, 65, 128);
+}
+
+.best-destinations {
+    background-color: beige;
+}
+
+.best-destinations .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.best-destinations .card:hover {
+    transform: translateY(-5px);
+}
+
+.best-destinations .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.best-destinations .card-title {
+    font-family: "AmesterdamTraveling";
+    font-size: 1.5rem;
+    color: rgb(11, 65, 128);
+}
+
+.best-destinations .card-text {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.best-destinations .btn-primary {
+    background-color: rgb(5, 52, 105);
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.best-destinations .btn-primary:hover {
+    background-color: rgb(11, 65, 128);
+}
+
+.our-programs{
+    background-color: beige;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials {
+    background-color: beige;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonial-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+.section2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(11, 65, 128);
+    background-image: url(./img/sec2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.section2 h1 {
+    color: beige;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+.balloons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+.balloon {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(204, 135, 6);
+    border-radius: 50% 50% 30% 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.balloon h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    color: beige;
+}
+
+.whiteicon{
+    color: beige;
+    /* width: 15px !important; */
+    margin-bottom: 5px;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    /* color: rgb(3 37 76); */
+    background-color: beige;
+}
+
+.newsletter p {
+    color: #333;
+    font-weight: light !important;
+    width: 70%;
+    text-align: center;
+}
+
+.newsletter .btn-primary {
+    max-width: 300px !important;
+    font-size: 16px !important;
+    background-color: rgb(5, 52, 105) !important;
+    font-weight: bold;
+    border:  none !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.newsletter .btn-primary:hover {
+    background-color: rgb(11, 65, 128) !important;
+}
+
+.offers{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./img/offers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(11, 65, 128);
+}
+
+.newsletter h1{
+    font-family: "AmesterdamTraveling";
+    color: rgb(11, 65, 128);
+    font-weight: bold !important;
+    width: 70%;
+    text-align: center;
+}
+
+.form-re-sizing{
+    width: 60% !important;
+}
+
+footer {
+    color: beige;
+    background-color: rgb(3, 37, 76);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-branding h1 {
+    color: #cc8706;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-branding p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h3 {
+    color: #cc8706;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: beige;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a:hover {
+    color: #cc8706;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.programs {
+    background-color: beige;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 2.5em;
+    color: rgb(11, 65, 128);
+    margin-bottom: 15px;
+    font-family: "AmesterdamTraveling";
+}
+
+.programs p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.program-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* to understand */
+}
+
+.program-item {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.program-item:hover {
+    transform: translateY(-5px);
+}
+
+.program-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.program-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    z-index: 2;
+}
+
+.program-item-content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.program-item h3 {
+    font-size: 1.4em;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.program-item p {
+    font-size: 1em;
+    color: #ddd;
+    margin: 10px 0 20px;
+}
+
+.program-item .btn-primary {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px !important;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(5, 52, 105) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease !important;
+}
+
+.program-item .btn-primary:hover {
+    background-color: rgb(11, 65, 128) !important;
+}
